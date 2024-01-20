@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense App</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <div class="container">
+        <div class="top-page">
+            <h1>Expense Tracker</h1>
+            <h2>Add a New Item:</h2>
+        </div>
+        <div class="inputsElements">
+            <strong>Name:</strong><input class="inputName" id="inputExpense" type="text" placeholder="Where was the expense mode?"><br>
+            <strong>Date:</strong><input type="date" class="inputDate" id="inputDate" id=""><strong>Amount:</strong><input class="inputAmount" id="inputAmount" type="number" id="">
+        </div>
+        <div class="button">
+            <button id="btnElement" class="btnElement">Add Expense</button>
+        </div>
+    </div>
+        <div class="tableElement">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Date</th>
+                        <th>Amount</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="writeExpense">
+                    <tr id="commentElement">
+                        <td colspan="4">No expenses added yet!</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <script src="scripts.js"></script>
+        <script src="https://kit.fontawesome.com/bfcd5f93fa.js" crossorigin="anonymous"></script>
+</body>
+</html>
