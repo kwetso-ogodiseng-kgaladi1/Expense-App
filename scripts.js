@@ -11,5 +11,19 @@ document.getElementById("btnElement").addEventListener("click", function addExpe
     const deleteElement = document.createElement("button")
     deleteElement.innerHTML = `<i class="fas fa-trash"></i>`
 
-    
+    if(!expense.length || !date.length || !amount.length ) {
+        alert("Empty Inputs!")
+    }
+    else {
+        document.getElementById("commentElement").style.display = "none"
+        expenseElement.appendChild(expense)
+        dateElement.appendChild(date)
+        amountElement.appendChild(symbol)
+        amountElement.appendChild(amount)
+        trElement.append(expenseElement, dateElement, amountElement, deleteElement)
+        document.getElementById("writeExpense").append(trElement)
+        deleteElement.addEventListener("click", function deleteExpense() {
+            document.getElementById("writeExpense").removeChild(trElement)
+        })
+    }
 })
