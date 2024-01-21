@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto'
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 10px 0 40px 0;
+}
+.tableElement {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+/* Top page styling */
+.top-page {
+    margin-bottom: 25px;
+    animation-name: fade;
+    animation-duration: 1s;
+}
+.top-page h1 {
+    font-size: 70px;
+    font-weight: 100;
+}
+.top-page h2 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #40B8CB;
+}
+/* Inputs */
+input {
+    border: 2px solid #DDDDDD;
+}
+.inputsElements, .button {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+strong {
+    font-size: 18px;
+    margin-left: 10px;
+}
+.inputName {
+    width: 650px;
+    height: 30px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+}
+.inputDate {
+    width: 280px;
+    height: 30px;
+    margin-left: 5px;
+}
+.inputAmount {
+    width: 300px;
+    height: 30px;
+    margin-left: 5px;
+}
+/* Button */
+.button {
+    margin-top: 25px;
+}
+.btnElement {
+    width: 125px;
+    height: 30px;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    background-color: #40B8CB;
+    border: none;
+    outline: 0;
+    border-radius: 5px;
+}
+.btnElement:hover {
+    transform: scale(1.15);
+    transition: 1s ease all;
+}
+.btnElement:active {
+    transform: scale(0.55);
+    transition: 1s ease all;
+}
+/* Table */
+table {
+    width: 800px;
+    border-collapse: collapse;
+    animation-name: fade;
+    animation-duration: 1.6s;
+    margin-bottom: 50px;
+}
+th {
+    height: 40px;
+}
+td, th {
+    border: 1px solid #CECFCF;
+    text-align: left;
+    padding: 8px;
+}
+.tableElement button {
+    border: 1px solid #DDDDDD;
+    text-align: left;
+    padding: 6px;
+}
+tbody {
+    background-color: #E0E0E0;
+}
+/* Animation */
+@keyframes fade {
+    from {
+        opacity: 0.1;
+        transform: translateX(-35%);
+    } to {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
